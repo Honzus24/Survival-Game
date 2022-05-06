@@ -1,0 +1,7 @@
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\bin\Debug\SurvivalGame.exe.config
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\bin\Debug\SurvivalGame.exe
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\bin\Debug\SurvivalGame.pdb
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\obj\Debug\SurvivalGame.csprojAssemblyReference.cache
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\obj\Debug\SurvivalGame.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\obj\Debug\SurvivalGame.exe
+D:\VisualStudioProjecs\AAA_Games\SurvivalGame\SurvivalGame\obj\Debug\SurvivalGame.pdb

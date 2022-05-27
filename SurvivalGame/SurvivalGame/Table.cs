@@ -155,6 +155,8 @@ WASD = move
 Space = take all items
 M = take one item
 N = drop one item
+L + K = cycle between recipes
+ENTER = make items
 Q = exit");
 
 
@@ -349,7 +351,8 @@ Q = exit");
                     if (selectedRecipe != -1)
                     {
                         Recipes recipe = rec[selectedRecipe];
-
+                        //Console.Title = recipe.id.ToString();
+                        Console.Title = recipe.resources.Count.ToString() + " - " + recipe.Rcount.ToString() + " - " + recipe.Icount.ToString();
                         int[] itemsIdNew = itemsId;
                         int[] itemsAmNew = itemsAmount;
 
@@ -363,11 +366,13 @@ Q = exit");
                                 {
                                     if (itemsAmNew[i] > 0)
                                     {
-                                        itemsAmNew[i]--;
+                                        itemsAmNew[i] -= 1;
+
                                         if (itemsAmNew[i] == 0)
                                         {
                                             itemsIdNew[i] = -1;
                                         }
+
                                         found++;
                                         break;
                                     }
@@ -375,9 +380,23 @@ Q = exit");
                             }
                         }
 
-                        if (found == recipe.resources.Count)
+                        if (found == recipe.Rcount)
                         {
-                            for (int i = 0; i < recipe.item.Count; i++)
+                            /*foreach (int resource in recipe.resources)
+                            {
+                                for (int i = 0; i < itemsIdNew.Length; i++)
+                                {
+                                    if (itemsIdNew[i] == resource)
+                                    {
+                                        if (itemsAmNew[i] > 0)
+                                        {
+                                            break;
+                                        }
+                                    }
+                                }
+                            }*/
+
+                            for (int i = 0; i < recipe.Icount; i++)
                             {
                                 itemsIdNew[3 + i] = recipe.item[i];
                                 itemsAmNew[3 + i] = 1;

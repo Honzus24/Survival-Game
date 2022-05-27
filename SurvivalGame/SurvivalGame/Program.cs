@@ -463,6 +463,13 @@ namespace SurvivalGame
                     screenBufferChar[1, 84 + p] = new Items(player.inventory.itemsId[player.inventory.selectedItemPosition]).name[p].ToString();
                 }
 
+                DateTime time = DateTime.Now;
+                string timeStr = time.ToString().Split(' ')[1];
+
+                for (int t = 0; t < timeStr.Length; t++)
+                {
+                    screenBufferChar[1, t + 2] = timeStr[t].ToString();
+                }
 
 
                 for (int y = 0; y < winHeight; y++)
